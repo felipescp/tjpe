@@ -2021,6 +2021,186 @@ const TAXONOMIA_DADOS = {
         }
       ]
     },
+{
+  "id": "constitucional",
+  "nivel_1": "Direito Constitucional",
+  "divisoes": [
+    {
+      "id": "const_teoria_poder",
+      "nivel_2": "Teoria da Constituição e Poder Constituinte",
+      "topicos": [
+        {
+          "id": "const_teoria_constituicao",
+          "nivel_3": "Teoria da Constituição e Estado Democrático de Direito",
+          "aliases": [
+            "Conceito e classificação",
+            "Supremacia da Constituição",
+            "Fundamentos constitucionais e princípio da República"
+          ]
+        },
+        {
+          "id": "const_interpretacao_aplicabilidade",
+          "nivel_3": "Interpretação e Aplicabilidade das Normas",
+          "aliases": [
+            "Hermenêutica constitucional e mutação",
+            "Classificação quanto à eficácia e aplicabilidade"
+          ]
+        },
+        {
+          "id": "const_poder_constituinte",
+          "nivel_3": "Poder Constituinte",
+          "aliases": [
+            "Poder originário e poder derivado",
+            "Poder constituinte estadual",
+            "Legitimidade e limites"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "const_direitos_fundamentais",
+      "nivel_2": "Direitos e Garantias Fundamentais",
+      "topicos": [
+        {
+          "id": "const_dir_individuais",
+          "nivel_3": "Direitos Individuais e Coletivos",
+          "aliases": [
+            "Direito à vida, privacidade e igualdade",
+            "Propriedade e função social",
+            "Dignidade da pessoa humana"
+          ]
+        },
+        {
+          "id": "const_dir_sociais",
+          "nivel_3": "Direitos Sociais",
+          "aliases": [
+            "Direitos dos trabalhadores",
+            "Seguridade social, saúde, educação e cultura",
+            "Direito ambiental"
+          ]
+        },
+        {
+          "id": "const_nacionalidade_politicos",
+          "nivel_3": "Nacionalidade e Direitos Políticos",
+          "aliases": [
+            "Direitos dos estrangeiros",
+            "Cidadania, voto e elegibilidade",
+            "Partidos políticos (Lei nº 9.096/1995)"
+          ]
+        },
+        {
+          "id": "const_remedios",
+          "nivel_3": "Ações e Remédios Constitucionais",
+          "aliases": [
+            "Habeas corpus, habeas data e mandado de segurança",
+            "Ação civil pública e ação popular",
+            "Mandado de injunção"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "const_organizacao_estado",
+      "nivel_2": "Organização do Estado",
+      "topicos": [
+        {
+          "id": "const_federacao",
+          "nivel_3": "Estrutura Federativa e Repartição de Competências",
+          "aliases": [
+            "União, Estados, Municípios e DF",
+            "Consórcios públicos (Lei nº 11.107/2005)"
+          ]
+        },
+        {
+          "id": "const_intervencao",
+          "nivel_3": "Intervenção",
+          "aliases": [
+            "Intervenção federal",
+            "Intervenção nos Estados e Municípios"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "const_organizacao_poderes",
+      "nivel_2": "Organização dos Poderes e Funções Essenciais",
+      "topicos": [
+        {
+          "id": "const_legislativo",
+          "nivel_3": "Poder Legislativo",
+          "aliases": [
+            "Processo legislativo",
+            "Comissões parlamentares e imunidades",
+            "Tribunais de Contas e fiscalização"
+          ]
+        },
+        {
+          "id": "const_executivo",
+          "nivel_3": "Poder Executivo e Defesa do Estado",
+          "aliases": [
+            "Presidencialismo",
+            "Medida Provisória",
+            "Estado de sítio e Estado de defesa"
+          ]
+        },
+        {
+          "id": "const_judiciario",
+          "nivel_3": "Poder Judiciário",
+          "aliases": [
+            "STF, STJ e Justiça dos Estados",
+            "Súmula Vinculante",
+            "Conselho Nacional de Justiça (CNJ)"
+          ]
+        },
+        {
+          "id": "const_funcoes_essenciais",
+          "nivel_3": "Funções Essenciais à Justiça",
+          "aliases": [
+            "Ministério Público",
+            "Advocacia e Defensoria Pública",
+            "Advocacia Pública"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "const_controle",
+      "nivel_2": "Controle de Constitucionalidade",
+      "topicos": [
+        {
+          "id": "const_controle_concentrado_difuso",
+          "nivel_3": "Sistemas e Instrumentos de Controle",
+          "aliases": [
+            "Controle difuso e concentrado",
+            "ADI, ADC e ADPF",
+            "Inconstitucionalidade por omissão",
+            "Efeitos da declaração"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "const_temas_especiais",
+      "nivel_2": "Temas Especiais",
+      "topicos": [
+        {
+          "id": "const_pcd",
+          "nivel_3": "Convenção Internacional sobre os Direitos das Pessoas com Deficiência",
+          "aliases": [
+            "Estatuto da Pessoa com Deficiência"
+          ]
+        },
+        {
+          "id": "const_indigenas",
+          "nivel_3": "Marco temporal indígena",
+          "aliases": [
+            "Direitos dos Povos Indígenas"
+          ]
+        }
+      ]
+    }
+  ]
+},
     {
       "id": "eleitoral",
       "nivel_1": "Direito Eleitoral",
@@ -2375,6 +2555,374 @@ const TAXONOMIA_DADOS = {
         }
       ]
     },
+{
+  "id": "financeiro_tributario",
+  "nivel_1": "Direito Financeiro e Tributário",
+  "divisoes": [
+    {
+      "id": "trib_sistema_competencia",
+      "nivel_2": "Sistema Tributário Nacional, Competência e Limitações",
+      "topicos": [
+        {
+          "id": "trib_stn_receitas",
+          "nivel_3": "Sistema Tributário Nacional e Repartição de Receitas",
+          "aliases": [
+            "Princípios gerais",
+            "Repartições de competência na CF/88"
+          ]
+        },
+        {
+          "id": "trib_competencia",
+          "nivel_3": "Competência Tributária",
+          "aliases": [
+            "Conceito, espécies e características",
+            "Capacidade tributária ativa e limitações"
+          ]
+        },
+        {
+          "id": "trib_limitacoes_imunidades",
+          "nivel_3": "Limitações ao Poder de Tributar e Imunidades",
+          "aliases": [
+            "Imunidades genéricas e específicas",
+            "Limitações constitucionais"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trib_tributos_especies",
+      "nivel_2": "Teoria Geral dos Tributos e Espécies Tributárias",
+      "topicos": [
+        {
+          "id": "trib_conceito_classificacao",
+          "nivel_3": "Conceito e Classificação dos Tributos",
+          "aliases": [
+            "Natureza jurídica e denominação",
+            "Tributos diretos e indiretos",
+            "Fiscalidade, extrafiscalidade e parafiscalidade"
+          ]
+        },
+        {
+          "id": "trib_especies",
+          "nivel_3": "Espécies Tributárias",
+          "aliases": [
+            "Impostos, taxas e contribuição de melhoria",
+            "Contribuições sociais",
+            "Preço público, tarifa e pedágio"
+          ]
+        },
+        {
+          "id": "trib_impostos_especie",
+          "nivel_3": "Impostos em Espécie",
+          "aliases": [
+            "Impostos da União",
+            "Impostos dos Estados e do Distrito Federal",
+            "Impostos dos Municípios"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trib_legislacao_obrigacao",
+      "nivel_2": "Legislação, Norma e Obrigação Tributária",
+      "topicos": [
+        {
+          "id": "trib_normas_legislacao",
+          "nivel_3": "Normas e Legislação Tributária",
+          "aliases": [
+            "Fontes e espécies normativas",
+            "Vigência, aplicação, interpretação e integração"
+          ]
+        },
+        {
+          "id": "trib_norma_fato_gerador",
+          "nivel_3": "Norma Jurídica e Fato Gerador",
+          "aliases": [
+            "Regra-matriz de incidência tributária",
+            "Efeitos e classificações do fato gerador"
+          ]
+        },
+        {
+          "id": "trib_obrigacao",
+          "nivel_3": "Obrigação Tributária",
+          "aliases": [
+            "Deveres instrumentais ou formais",
+            "Sujeito ativo e sujeito passivo",
+            "Solidariedade, capacidade e domicílio tributário"
+          ]
+        },
+        {
+          "id": "trib_responsabilidade",
+          "nivel_3": "Responsabilidade Tributária",
+          "aliases": [
+            "Responsabilidade de sucessores e terceiros",
+            "Responsabilidade por infrações",
+            "Substituição tributária"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trib_credito",
+      "nivel_2": "Crédito Tributário",
+      "topicos": [
+        {
+          "id": "trib_constituicao_lancamento",
+          "nivel_3": "Constituição e Lançamento Tributário",
+          "aliases": [
+            "Conceito, natureza jurídica e atributos",
+            "Modalidades e revisão"
+          ]
+        },
+        {
+          "id": "trib_suspensao",
+          "nivel_3": "Suspensão da Exigibilidade do Crédito",
+          "aliases": [
+            "Moratória e parcelamento",
+            "Depósito, reclamações e recursos administrativos",
+            "Medida liminar e tutela antecipada"
+          ]
+        },
+        {
+          "id": "trib_extincao",
+          "nivel_3": "Extinção do Crédito Tributário",
+          "aliases": [
+            "Pagamento, compensação, transação e remissão",
+            "Decadência e prescrição",
+            "Repetição de indébito e dação em pagamento"
+          ]
+        },
+        {
+          "id": "trib_exclusao",
+          "nivel_3": "Exclusão do Crédito Tributário",
+          "aliases": [
+            "Isenção e anistia"
+          ]
+        },
+        {
+          "id": "trib_garantias",
+          "nivel_3": "Garantias e Privilégios do Crédito",
+          "aliases": [
+            "Preferências"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trib_adm_processo",
+      "nivel_2": "Administração, Infrações e Processo Tributário",
+      "topicos": [
+        {
+          "id": "trib_administracao_sancoes",
+          "nivel_3": "Administração e Sanções Tributárias",
+          "aliases": [
+            "Fiscalização",
+            "Dívida ativa e protesto de CDA",
+            "Certidões negativas",
+            "Ilícitos administrativos e sanções tributárias"
+          ]
+        },
+        {
+          "id": "trib_processo_judicial",
+          "nivel_3": "Processo Judicial Tributário",
+          "aliases": [
+            "Execução fiscal",
+            "Ação cautelar fiscal e ação declaratória",
+            "Ação anulatória e mandado de segurança",
+            "Ação de consignação em pagamento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "financeiro_internacional",
+      "nivel_2": "Direito Financeiro e Tributação Internacional",
+      "topicos": [
+        {
+          "id": "trib_internacional",
+          "nivel_3": "Tributação Internacional",
+          "aliases": [
+            "Acordos para evitar dupla tributação",
+            "OMC, Mercosul, ALADI e ALCA",
+            "Incentivos fiscais, evasão e elisão tributárias"
+          ]
+        },
+        {
+          "id": "fin_atividade_orcamento",
+          "nivel_3": "Direito Financeiro e Orçamento",
+          "aliases": [
+            "Atividade financeira do Estado",
+            "Leis orçamentárias (PPA, LDO e LOA)",
+            "Lei de Responsabilidade Fiscal",
+            "Lei nº 4.320/1964"
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "ambiental",
+  "nivel_1": "Direito Ambiental",
+  "divisoes": [
+    {
+      "id": "amb_fundamentos_constitucional",
+      "nivel_2": "Fundamentos e Direito Ambiental Constitucional",
+      "topicos": [
+        {
+          "id": "amb_teoria_geral",
+          "nivel_3": "Teoria Geral, Princípios e Ética Ambiental",
+          "aliases": [
+            "Conceito, Natureza e Fontes",
+            "Estado Constitucional Ecológico",
+            "Ética e o Estatuto da Cidade"
+          ]
+        },
+        {
+          "id": "amb_direito_constitucional",
+          "nivel_3": "Direito Ambiental Constitucional",
+          "aliases": [
+            "Deveres ambientais e ecológicos",
+            "Competência legislativa em matéria ambiental",
+            "Competências exclusivas e concorrentes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amb_pnma_instrumentos",
+      "nivel_2": "Política Nacional do Meio Ambiente e Instrumentos",
+      "topicos": [
+        {
+          "id": "amb_pnma_sisnama",
+          "nivel_3": "Política Nacional do Meio Ambiente (PNMA) e SISNAMA",
+          "aliases": [
+            "Princípios, finalidade e instrumentos",
+            "Conselho de Governo, Conama e Ministério do Meio Ambiente",
+            "Ibama e Fundo Nacional do Meio Ambiente (FNMA)"
+          ]
+        },
+        {
+          "id": "amb_licenciamento_eia",
+          "nivel_3": "Licenciamento e Avaliação de Impacto Ambiental",
+          "aliases": [
+            "Tipos de Licença (LP, LI e LO)",
+            "Estudo de Impacto Ambiental (EIA/RIMA)",
+            "Audiência Pública e Normas do Conama"
+          ]
+        },
+        {
+          "id": "amb_zoneamento",
+          "nivel_3": "Zoneamento Ambiental",
+          "aliases": [
+            "Zoneamento Ecológico-Econômico",
+            "Zonas de Uso Industrial (ZUI, ZUEI, ZUPI, ZUD)",
+            "Zoneamento Ambiental Agrícola e Costeiro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amb_bens_espacos_poluicao",
+      "nivel_2": "Bens Ambientais, Espaços Protegidos e Poluição",
+      "topicos": [
+        {
+          "id": "amb_bens_ambientais",
+          "nivel_3": "Bens Ambientais e Recursos Naturais",
+          "aliases": [
+            "Águas e cavidades naturais",
+            "Fauna, flora e florestas",
+            "Praias, plataforma continental e terrenos de marinha"
+          ]
+        },
+        {
+          "id": "amb_espacos_protegidos",
+          "nivel_3": "Espaços Territoriais Especialmente Protegidos",
+          "aliases": [
+            "Sistema Nacional de Unidades de Conservação (SNUC)",
+            "Áreas de Preservação Permanente (APP)"
+          ]
+        },
+        {
+          "id": "amb_poluicao_mudancas",
+          "nivel_3": "Poluição e Mudanças Climáticas",
+          "aliases": [
+            "Poluição de águas, atmosférica, sonora e por resíduos",
+            "Poluição por agrotóxicos e rejeitos perigosos",
+            "Mercado de Carbono e Pagamento por Serviços Ambientais"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amb_responsabilidade_tutela",
+      "nivel_2": "Responsabilidade, Defesa Processual e Crimes Ambientais",
+      "topicos": [
+        {
+          "id": "amb_responsabilidade_dano",
+          "nivel_3": "Dano e Responsabilidade Ambiental",
+          "aliases": [
+            "Apuração e reparação do dano",
+            "Responsabilidade Administrativa, Civil e Penal",
+            "Infrações administrativas e sanções"
+          ]
+        },
+        {
+          "id": "amb_defesa_processual",
+          "nivel_3": "Meios Processuais para a Defesa Ambiental",
+          "aliases": [
+            "Ação Civil Pública e Ação Popular",
+            "Mandado de Segurança, MI e ADI",
+            "Tutela inibitória, de urgência e evidência",
+            "Desapropriação e Tombamento"
+          ]
+        },
+        {
+          "id": "amb_crimes_ambientais",
+          "nivel_3": "Crimes Contra o Meio Ambiente",
+          "aliases": [
+            "Lei de Crimes Ambientais (Lei nº 9.605/1998)",
+            "Responsabilidade penal da pessoa jurídica",
+            "Crimes contra flora, fauna, patrimônio e de poluição"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amb_legislacao_especial_internacional",
+      "nivel_2": "Políticas Nacionais, Legislação Especial e Direito Internacional",
+      "topicos": [
+        {
+          "id": "amb_politicas_nacionais",
+          "nivel_3": "Políticas Nacionais Setoriais e Leis Específicas",
+          "aliases": [
+            "Recursos Hídricos (Lei nº 9.433/1997) e Saneamento (Lei nº 11.445/2007)",
+            "Resíduos Sólidos (Lei nº 12.305/2010)",
+            "Código Florestal (Lei nº 12.651/2012) e Mata Atlântica (Lei nº 11.428/2006)",
+            "Educação Ambiental, Biossegurança e Biodiversidade"
+          ]
+        },
+        {
+          "id": "amb_internacional",
+          "nivel_3": "Direito Ambiental Internacional",
+          "aliases": [
+            "Princípios gerais e fontes",
+            "Mercosul e procedimentos transfronteiriços",
+            "Organizações Não Governamentais (ONGs)"
+          ]
+        },
+        {
+          "id": "amb_legislacao_estadual",
+          "nivel_3": "Legislação Estadual de Pernambuco",
+          "aliases": [
+            "Lei Estadual nº 14.249/2010",
+            "Licenciamento ambiental e infrações em PE"
+          ]
+        }
+      ]
+    }
+  ]
+},
     {
       "id": "administrativo",
       "nivel_1": "Direito Administrativo",
