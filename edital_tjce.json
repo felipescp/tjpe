@@ -3539,7 +3539,6 @@
     "core": true,
     "insightFCC": "\n- Matéria dogmática pesada, manter viva na reta final.\n"
   },
-  [
     {
       "disciplina": "Direito Financeiro e Tributário",
       "item do edital": "Lei de Responsabilidade Fiscal (LC 101/00)",
@@ -3927,34 +3926,6 @@
       "incidencia": "crítica",
       "core": true,
       "insightFCC": "\n- Fixar índices, limites constitucionais e o princípio da Universalidade da Lei 4.320.\n"
-    },
-    {
-      "disciplina": "Direito Administrativo",
-      "item do edital": "Agentes Públicos e Servidores",
-      "nível_3": [
-        "Regime dos Servidores Públicos"
-      ],
-      "tax_ids": [
-        "adm_agentes_regime"
-      ],
-      "pesoRelativo": 0,
-      "incidencia": "prioridade",
-      "core": true,
-      "insightFCC": "\n- Relevância média na prova de primeira fase.\n"
-    },
-    {
-      "disciplina": "Direito Administrativo",
-      "item do edital": "Improbidade Administrativa (Lei 8.429/92)",
-      "nível_3": [
-        "Improbidade Administrativa (Lei nº 8.429/1992)"
-      ],
-      "tax_ids": [
-        "adm_improbidade"
-      ],
-      "pesoRelativo": 0,
-      "incidencia": "crítica",
-      "core": true,
-      "insightFCC": "\n- Alta densidade e cobrança constante na banca.\n"
     },
     {
       "disciplina": "Direito Ambiental",
