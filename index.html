@@ -2267,8 +2267,19 @@ getBateriasVinculadas: function(item) {
       if (!this.DOMAIN_FLAT[disc]) this.DOMAIN_FLAT[disc] = { itens: [], insightFCC: item.insightFCC || '' };
       this.DOMAIN_FLAT[disc].itens.push(item);
     });
+const mapIncidencia = {
+      "crítica": 3,
+      "prioridade": 2,
+      "residual": 1
+    };
+
     Object.keys(this.DOMAIN_FLAT).forEach(d => {
-      this.DOMAIN_FLAT[d].itens.sort((a, b) => (b.pesoRelativo || 0) - (a.pesoRelativo || 0));
+      this.DOMAIN_FLAT[d].itens.sort((a, b) => {
+        let pesoA = mapIncidencia[a.incidencia] || 0;
+        let pesoB = mapIncidencia[b.incidencia] || 0;
+        
+        return pesoB - pesoA;
+      });
     });
   },
 
