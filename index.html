@@ -2390,9 +2390,10 @@ setDiscPage: function(discName) {
       else contentEspec += btnHtml;
     });
     
-    sb.innerHTML = (contentGerais ? htmlGerais + contentGerais : '') + (contentEspec ? htmlEspec + contentEspec : '');
-  },
-
+    sb.innerHTML =
+    (contentEspec ? htmlEspec + contentEspec : '') +
+    (contentGerais ? htmlGerais + contentGerais : '');
+  },	
 
 renderMainPage: function() {
     let container = document.getElementById('tjce-cards-container');
