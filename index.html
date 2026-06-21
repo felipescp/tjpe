@@ -6109,10 +6109,21 @@ if (isEdicao) {
 
 // ── ABAS ──────────────────────────────────────────────────
 function pct(d){
-  var t=d.blocos.reduce(function(a,b){return a.concat(b.questoes);},[]);
-  var validas=t.filter(function(q){return q.gabarito!=='ANULADA';});
-  if(!validas.length)return 0;
-  return Math.round(validas.filter(function(q){return d.res[q.id]&&d.res[q.id].c&&d.res[q.id].ok;}).length/validas.length*100);
+  var t = d.blocos.reduce(function(a,b){
+    return a.concat(b.questoes);
+  }, []);
+
+  var validas = t.filter(function(q){
+    return q.gabarito !== 'ANULADA';
+  });
+
+  var respondidas = validas.filter(function(q){
+    return d.res[q.id] && d.res[q.id].c;
+  });
+
+  return validas.length
+    ? Math.round(respondidas.length / validas.length * 100)
+    : 0;
 }
 
 // =========================================================
