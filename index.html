@@ -5191,11 +5191,29 @@ window.MAPA_TAXONOMIA = {};
 //
 // =========================================================
 
-    else if (auditId) {
-        let arquivoMorto = JSON.parse(localStorage.getItem('cordeiro_auditoria_historica') || '{}');
-        if (arquivoMorto[auditId]) {
-            let snap = arquivoMorto[auditId];
-            C = snap.cfg; D = snap.dados; SIMS = [snap]; SI = 0;
+else if (auditId) {
+
+    console.log(
+        '[ROTA_AUDITID]',
+        {
+            auditId,
+            simsAntes: SIMS.length,
+            siAntes: SI
+        }
+    );
+
+    let arquivoMorto = JSON.parse(
+        localStorage.getItem('cordeiro_auditoria_historica') || '{}'
+    );
+
+    if (arquivoMorto[auditId]) {
+
+        let snap = arquivoMorto[auditId];
+
+        C = snap.cfg;
+        D = snap.dados;
+        SIMS = [snap];
+        SI = 0;
             tela(null);
 tela('tela-resultado');
 
@@ -9086,6 +9104,16 @@ document.addEventListener('click', () => {
 // =========================================================
 
 window.abrirResultadoHistorico = function(id) {
+
+    console.log(
+        '[ABRIR_RESULTADO_HISTORICO]',
+        {
+            id,
+            simsAntes: SIMS.length,
+            siAntes: SI
+        }
+    );
+
     // 1. Limpa eventuais modais sobrepostos
     document.querySelectorAll('div[style*="z-index: 9999"]').forEach(el => el.remove());
 
@@ -9111,21 +9139,41 @@ window.abrirResultadoHistorico = function(id) {
     if (arquivoMorto[id]) {
         let snap = arquivoMorto[id];
         
-        // 3. Hidrata as variáveis de estado
-        C = snap.cfg; 
-        D = snap.dados;
-        SIMS = [snap]; 
-        SI = 0;
-        HIST = [mkH(snap, 0)]; 
-        HI = 0;
-        
-        // 4. Renderiza e exibe a tela de Resultados
-        tela(null); 
-tela('tela-resultado');
+// 3. Verifica se a aba já está aberta para evitar abas duplicadas do mesmo resultado
+    let idxExistente = SIMS.findIndex(function(s) {
+        return s.cfg && s.cfg.id === id && s.stats;
+    });
 
-renderResultado(0);
-renderTabs();
-autoSave();
+if (idxExistente >= 0) {
+
+    console.log(
+        '[RESULTADO_JA_ABERTO]',
+        idxExistente
+    );
+
+    trocarTab(idxExistente);
+
+} else {
+
+    console.log(
+        '[PUSH_RESULTADO]',
+        {
+            simsAntes: SIMS.length,
+            id: id
+        }
+    );
+
+    SIMS.push(snap);
+
+    console.log(
+        '[PUSH_RESULTADO_OK]',
+        {
+            simsDepois: SIMS.length
+        }
+    );
+
+    trocarTab(SIMS.length - 1);
+}
         
         window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
