@@ -28,6 +28,18 @@ body { font-family: var(--font-body); background-color: var(--bg-body); color: v
 .content { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; position: relative; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
+
+.grid-macro{
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+}
+
+.macro-col{
+    flex:1;
+    min-width:0;
+}
+
 @media(max-width:700px){
 
     .grid-macro{
