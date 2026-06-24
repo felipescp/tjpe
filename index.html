@@ -6400,18 +6400,15 @@ function fecharTab(i){
 
 } else {
 
-      SI = Math.min(
+    SI = Math.min(
         SI,
         SIMS.length - 1
-      );
+    );
 
-    }
-
-    renderTabs();
-
-    autoSave();
+    trocarTab(SI);
 
     return;
+}
   }
 
   let confirmar = confirm(
